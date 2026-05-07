@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="assets/imagens/backgrounds/mainHeaderFigure.png" alt="Banner apresentativo da página de venda de produtos de tecnologia.">
+            <section>
+                <h1>High Tech E-commerce</h1>
+                <p>Encontre produtos de tecnologia selecionados para facilitar seu dia a dia, com opções modernas, práticas e acessíveis.</p>
+            </section>
+        </header>
+
+        <article>
+            <h2>Produtos</h2>
+            <section>
+                <div id="select_div">
+                    <label for="categoriaFiltro">Filtrar por categoria:</label>
+                    <select id="categoriaFiltro">
+                        <option value="todos">Todos os produtos:</option>
+                        <option value="acessórios">Acessórios:</option>
+                        <option value="computadores">Computadores</option>
+                        <option value="periféricos">Periféricos</option>
+                        <option value="móveis">Móveis</option>
+                        <option value="eletrônicos">Eletrônicos</option>
+                        <option value="armazenamento">Armazenamento</option>
+                    </select>
+                </div>
+                <h3>Categoria: <span id="categoriaExibir"></span></h3>
+                <div id="exibicaoItems">
+                </div>
+            </section>
+        </article>
+        <footer class="footer">
+            <p>Projeto desenvolvido para praticar manipulação de arrays, renderização dinâmica de produtos e filtros com JavaScript.</p>
+
+            <p class="footer__copy"> High Tech E-commerce &copy; 2026</p>
+        </footer>
+    </main>
+</body>
+</html>
